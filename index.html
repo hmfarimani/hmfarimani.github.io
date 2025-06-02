@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Farimani - Personal Website</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            min-width: 280px; /* Ensures sidebar doesn't get too squished */
+            text-align: center;
+        }
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: rounds the corners of the image */
+            margin-bottom: 20px;
+        }
+        .sidebar h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        .sidebar h2 {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .sidebar p {
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        .sidebar a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            min-width: 300px; /* Ensures main content doesn't get too squished */
+        }
+        .main-content h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        .main-content h2:first-child {
+            margin-top: 0;
+        }
+        .main-content h3 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            color: #444;
+        }
+        .main-content h4 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .main-content p, .main-content ul {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        .main-content ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .main-content .date {
+            font-style: italic;
+            color: #777;
+            font-size: 0.9em;
+        }
+        .main-content .publication-title {
+            font-weight: bold;
+        }
+        .main-content .publication-details {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .main-content .skills-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .main-content .skills-list li {
+            margin-bottom: 8px;
+        }
+        .main-content .skills-list strong {
+            display: inline-block;
+            width: 200px; /* Adjust as needed for alignment */
+            font-weight: bold;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+            .sidebar, .main-content {
+                flex: none; /* Disable flex grow/shrink */
+                width: 100%; /* Make columns full width */
+                padding: 15px;
+                box-sizing: border-box; /* Include padding in width calculation */
+            }
+            .sidebar {
+                text-align: center;
+                padding-bottom: 0;
+            }
+            .sidebar img {
+                max-width: 250px; /* Limit image size on small screens */
+            }
+            .main-content h2 {
+                font-size: 1.4em;
+            }
+            .main-content h3 {
+                font-size: 1.2em;
+            }
+             .main-content .skills-list strong {
+                width: auto; /* Allow skill categories to take natural width */
+                display: block; /* Stack category above items */
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="hmfarimani.jpg" alt="Hassan Farimani">
+            <h1>Hassan M.Farimani</h1>
+            <h2>Robotics Researcher</h2>
+            <p>
+                <a href="mailto:hmfarimani@ksu.edu">hmfarimani@ksu.edu</a>
+            </p>
+            <p>Manhattan, KS, USA</p>
+            <p>
+                GitHub: <a href="https://github.com/hmfarimani" target="_blank">hmfarimani</a> <br>
+                LinkedIn: <a href="https://linkedin.com/in/hmfarimani" target="_blank">hmfarimani</a>
+            </p>
+        </aside>
+        <main class="main-content">
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>Dedicated and results-oriented PhD student at Kansas State University with a strong background in AI and software development. Passionate about contributing to advancements in formal verification, RL, trustworthy AI, and robotics. Eager to apply research expertise and technical skills in a Teaching or Research Assistant role.</p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div>
+                    <h3>PHD STUDENT, COMPUTER SCIENCE</h3>
+                    <h4>K-State (Kansas State University)</h4>
+                    <p class="date">Kansas, USA | Jan, 2025 - Present</p>
+                </div>
+                <div>
+                    <h3>M.SC., ARTIFICIAL INTELLIGENCE AND ROBOTICS</h3>
+                    <h4>University of Isfahan</h4>
+                    <p class="date">Isfahan, Iran | 2015 - 2018</p>
+                    <p><strong>Thesis:</strong> Structured Learning in Markov Random Field for Efficient Inference with Submodular Relaxation Technique.</p>
+                    <ul>
+                        <li>Developed submodular relaxation (SMR) inference for Associative Hierarchical Random Fields (AHRF) using convex optimization methods for image semantic segmentation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>B.SC., SOFTWARE ENGINEERING</h3>
+                    <h4>Sajad University of Technology</h4>
+                    <p class="date">Mashhad, Iran | 2009 - 2013</p>
+                    <p><strong>Thesis:</strong> Design and Implementation of a Car Tracking Software.</p>
+                    <ul>
+                        <li>Implemented Lucas-Kanade method for optical flow estimation and vehicle tracking.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="publications">
+                <h2>Publications</h2>
+                <div>
+                    <p class="publication-title">Authorship Attribution in Historical and Literary Texts by A Deep Learning Classifier</p>
+                    <p class="publication-details">Reisi, E., Mahboob Farimani, H. (2020). Journal of Applied Intelligent Systems and Information Sciences, 1(2), 118-127.</p>
+                    <p class="publication-details">doi: <a href="https://doi.org/10.22034/jaisis.2021.269735.1018" target="_blank">10.22034/jaisis.2021.269735.1018</a></p>
+                </div>
+                <div>
+                    <p class="publication-title">Formal Modeling and Verification of Publisher-Subscriber Paradigm in ROS (In progress)</p>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>Work Experience</h2>
+                <div>
+                    <h3>GRADUATE TEACHING ASSISTANT (GTA)</h3>
+                    <h4>Kansas State University</h4>
+                    <p class="date">Kansas, USA | Spring 2025</p>
+                    <ul>
+                        <li>GTA for CIS200 under Prof. Lang.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>ROBOTICS DEVELOPER AND CONSULTANT</h3>
+                    <h4>Northsence</h4>
+                    <p class="date">Gothenburg, Sweden | 2022 to 2024</p>
+                    <ul>
+                        <li>Consulting and developing infrastructure for teleoperation mobile robots on construction sites.</li>
+                        <li>Researching robot navigation, 3D Scene Graph, Vision-based SLAM, and cloud-based robot control.</li>
+                        <li>Robot simulations.</li>
+                        <li>Making an autonomous mobile robot (AMR) from scratch.</li>
+                        <li>Providing real-time communication over the Internet for teleoperation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SENIOR FULL-STACK .NET DEVELOPER</h3>
+                    <h4>Part Financial Data Processing Company</h4>
+                    <p class="date">Mashhad, Iran | 2020 - 2022</p>
+                    <ul>
+                        <li>Developed AI-based services and REST APIs using C# and .NET.</li>
+                        <li>Designed and implemented Public Key Infrastructure (PKI) for remote AI-based authentication for Enterprise Banking infrastructure.</li>
+                        <li>Mentorship of junior developers.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>RESEARCH ASSISTANT</h3>
+                    <h4>University of Isfahan</h4>
+                    <p class="date">Isfahan, Iran | Dec. 2018 - Feb. 2020</p>
+                    <ul>
+                        <li>Designed and implemented an AI-based system for authorship attribution and semantic search for old Persian manuscripts.</li>
+                        <li>Developed AI-based POS Tagger for literature researchers.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li><strong>Programming Languages:</strong> C, C++, Python, Matlab, OpenCV, Java</li>
+                    <li><strong>Robotics:</strong> ROS, ROS2</li>
+                    <li><strong>Machine Learning Frameworks:</strong> Pytorch, Tensorflow, Keras, Huggingface</li>
+                    <li><strong>Databases:</strong> MS SQL Server, MongoDB, Redis</li>
+                    <li><strong>Web Technologies:</strong> React, JQuery, CSS, HTML</li>
+                    <li><strong>Tools:</strong> Git, Docker, Unit testing</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
